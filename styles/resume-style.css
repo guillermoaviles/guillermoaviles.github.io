@@ -38,14 +38,20 @@
     align-content: flex-start;
   }
 
-  img {
-    /* align-items:flex-start; */
-    /* vertical-align:flex-start; */
-    position: relative;
-    max-width: 70%;
-    height: auto;
-    filter: grayscale(100%);
-  }
+  #resume {
+    padding: 10px;
+    align-content: center;
+    max-width: 800px;
+    margin-top:  10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: 40px solid #000;
+    border-bottom: 40px solid #000;
+    text-align: center;
+    font-size: 4vw;
+    color: black;
+    background-color: white;
+    }
 
   .info {
     text-decoration: none;
@@ -63,6 +69,7 @@
 
   #box-container {
     position: fixed;
+    margin-top: 20px;
     top: 0;
     z-index: -2;
   }
@@ -72,12 +79,15 @@
     top: 0;
   }
 
-  #my-name {
-    z-index: 1;
-    margin-left: 50px;
-    position: absolute;
-    font-size: 6vw;
-    bottom: -4px;
+  #my-resume {
+    justify-content: center;
+    /* margin-top: 100px; */
+    text-align: center;
+    /* position: absolute; */
+    color: black;
+    font-size: 8vw;
+    font-weight: bold;
+  
   }
 
   div {
@@ -88,9 +98,9 @@
   #about-me {
     text-align: center;
     font-size: min(6vw, 30px);
-    position: absolute;
+    position: fixed;
     top: 30px;
-    right: 10px;
+    right: 0px;
     width: 25%;
     height: 6vw;
     background-color: #ff1493;
