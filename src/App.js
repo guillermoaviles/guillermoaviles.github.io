@@ -1,11 +1,48 @@
-import './App.css';
-import Header from './components/Header';
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Landing from "./components/Landing";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Resume from "./screens/Resume";
+import SingleProject from "./screens/SingleProject.js";
+
 
 function App() {
+  let navigate = useNavigate();
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <>
+      <Navbar></Navbar>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Landing></Landing>
+              <About></About>
+              <Projects></Projects>
+            </>
+          }
+        ></Route>
+        <Route
+          path="/project/:num"
+          element={<SingleProject></SingleProject>}
+        ></Route>
+        <Route path="/resume" element={<Resume></Resume>}></Route>
+        <Route
+          path="*"
+          element={
+            <>
+              <div className="fullscreen">
+                <h1>Wrong Url </h1>
+                <button onClick={() => navigate("/")}>Go Home</button>
+              </div>
+            </>
+          }
+        ></Route>
+      </Routes>
+      <Footer></Footer>
+    </>
   );
 }
 

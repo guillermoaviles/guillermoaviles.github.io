@@ -1,13 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600&display=swap");
+* {
+  font-family: "IBM Plex Mono", monospace;
+}
+:root {
+  --main-color: #2a2f40;
+  --dark-main-color: #212831;
+  --splash-color: #7a2605;
+  --footer-color: #212831;
+  --action-color: #ff8900;
+  --fade-action-color: rgba(255, 137, 0, 0.2);
+  --sub-action-color: #00feff;
+  --fade-sub-action-color: rgba(0, 254, 255, 0.2);
+  --text-color: white;
+  --projecthover-color: #2128314a;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark-main-color);
 }
-
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
