@@ -1,0 +1,131 @@
+.About {
+  width: 100vw;
+  height: fit-content;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__content__container {
+    min-height: 1200px;
+  }
+  &__skills__header {
+    align-self: center;
+    background: linear-gradient(
+      180deg,
+      transparent 70%,
+      rgba(100, 184, 160, 0.56) 70%,
+      rgba(100, 184, 160, 0.56) 87%,
+      transparent 87%
+    );
+    font-size: 2rem;
+  }
+  &__animated__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__image__container {
+    margin: 3rem;
+    border: 1px solid var(--action-color);
+    width: 45vw;
+    height: 45vw;
+    max-width: 350px;
+    max-height: 350px;
+    min-height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.25s;
+    background-color: rgba(35, 4, 4, 0.459);
+    filter: drop-shadow(0px 0px 1rem var(--fade-sub-action-color));
+
+    & img {
+      flex-shrink: 0;
+      width: 100%;
+    }
+  }
+  &__contact-title {
+    font-size: 2rem;
+    font-weight: lighter;
+    background: linear-gradient(
+      180deg,
+      transparent 75%,
+      rgba(89, 17, 255, 0.3) 75%,
+      rgba(89, 50, 200, 0.4) 90%,
+      rgba(89, 17, 255, 0.3) 100%,
+      transparent 100%
+    );
+  }
+  &__contact_array {
+    display: flex;
+    width: fit-content;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    & .contact_item {
+      color: rgb(228, 185, 106);
+      margin: 5vw;
+      transition: all ease 0.3s;
+
+      &:hover {
+        font-size: smaller;
+        color: rgba(166, 33, 223, 0.573);
+      }
+    }
+  }
+  &__image_array {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    max-width: 50rem;
+    min-width: 300px;
+
+    height: fit-content;
+    & img {
+      width: 10vw;
+      min-width: 4rem;
+      max-width: 7rem;
+      padding: 1rem;
+    }
+  }
+  & h1 {
+    width: fit-content;
+    background: linear-gradient(
+      180deg,
+      transparent 70%,
+      var(--action-color) 70%
+    );
+  }
+  & h2 {
+    width: fit-content;
+    color: var(--text-color);
+    background: linear-gradient(
+      180deg,
+      transparent 95%,
+      var(--action-color) 95%
+    );
+    // margin: 0px;
+  }
+  & li {
+    color: var(--sub-action-color);
+    & span {
+      padding-left: 1rem;
+      font-size: 2rem;
+    }
+    & .list-text {
+      color: var(--text-color);
+      margin: 0px;
+    }
+  }
+  &__text__content {
+    width: 80%;
+    max-width: 50rem;
+    text-align: center;
+    font-size: 1.2rem;
+    // margin: 1rem;
+  }
+}

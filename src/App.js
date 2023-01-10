@@ -1,3 +1,5 @@
+import "./styles/App.scss";
+import "./styles/BreakPoints.scss";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
@@ -5,7 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Resume from "./screens/Resume";
-import SingleProject from "./screens/SingleProject.js";
+import SingleProject from "./screens/SingleProject";
 
 
 function App() {
