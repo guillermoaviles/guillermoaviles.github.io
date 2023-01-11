@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
-import laptopSrc from "../media/hater.png";
-import phoneSrc from "../media/moblieHater.png";
+import dealioImage from "../media/dealio-laptop.png";
 import reactIcon from "../media/react.svg";
-import reduxIcon from "../media/redux.svg";
-import djangoIcon from "../media/django.svg";
-import postgresIcon from "../media/postgres.svg";
+import nodeIcon from "../media/node.svg";
 import herokuIcon from "../media/heroku.svg";
-import pythonIcon from "../media/python.svg";
-import netlifyIcon from "../media/netlify.svg";
+import expressIcon from "../media/express.svg";
+import mongoDBIcon from "../media/mongoDB.svg";
 export default function Hater() {
   useEffect(() => {
     document.body.style.setProperty(
@@ -19,8 +16,7 @@ export default function Hater() {
     <div className="SingleProject">
       <div className="SingleProject__top__row">
         <div className="SingleProject__image__container">
-          <img className="laptop" src={laptopSrc} alt="laptop" />
-          <img className="moblie" src={phoneSrc} alt="phone" />
+          <img className="laptop" src={dealioImage} alt="laptop" />
         </div>
         <div
           className="SingleProject__title_wrapper"
@@ -53,15 +49,12 @@ export default function Hater() {
       <div className="SingleProject__bottom_container">
         <h1>Tech Used 🖥</h1>
         <div className="SingleProject__image__array__container">
-          <img src={postgresIcon} alt="devIcon" title="PostgreSQL" />
-
-          <img src={djangoIcon} alt="devIcon" title="Django" />
-          <img src={pythonIcon} alt="devIcon" title="Python" />
           <img src={reactIcon} alt="devIcon" title="React.js" />
-          <img src={reduxIcon} alt="devIcon" title="Redux" />
-
+          <img src={nodeIcon} alt="devIcon" title="Node.js" />
+          
+          <img src={expressIcon} alt="devIcon" title="Express.js" />
+          <img src={mongoDBIcon} alt="devIcon" title="mongoDB" />
           <img src={herokuIcon} alt="devIcon" title="Heroku" />
-          <img src={netlifyIcon} alt="devIcon" title="netlify" />
         </div>
         <p>
         The online store app would be the place where the users 

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import laptopSrc from "../media/hater.png";
-import phoneSrc from "../media/moblieHater.png";
-import reactIcon from "../media/react.svg";
-import reduxIcon from "../media/redux.svg";
-import djangoIcon from "../media/django.svg";
-import postgresIcon from "../media/postgres.svg";
+import lungoImage from "../media/lungo-laptop.png";
+import metaMaskIcon from "../media/metamask.png";
+import nextIcon from "../media/nextjs.svg";
 import herokuIcon from "../media/heroku.svg";
-import pythonIcon from "../media/python.svg";
-import netlifyIcon from "../media/netlify.svg";
+import moralisIcon from "../media/moralis.png";
+import expressIcon from "../media/express.svg";
+import mongoDBIcon from "../media/mongoDB.svg";
+
+
 export default function Hater() {
   useEffect(() => {
     document.body.style.setProperty(
@@ -19,8 +19,7 @@ export default function Hater() {
     <div className="SingleProject">
       <div className="SingleProject__top__row">
         <div className="SingleProject__image__container">
-          <img className="laptop" src={laptopSrc} alt="laptop" />
-          <img className="moblie" src={phoneSrc} alt="phone" />
+          <img className="laptop" src={lungoImage} alt="laptop" />
         </div>
         <div
           className="SingleProject__title_wrapper"
@@ -53,21 +52,18 @@ export default function Hater() {
       <div className="SingleProject__bottom_container">
         <h1>Tech Used 🖥</h1>
         <div className="SingleProject__image__array__container">
-          <img src={postgresIcon} alt="devIcon" title="PostgreSQL" />
-
-          <img src={djangoIcon} alt="devIcon" title="Django" />
-          <img src={pythonIcon} alt="devIcon" title="Python" />
-          <img src={reactIcon} alt="devIcon" title="React.js" />
-          <img src={reduxIcon} alt="devIcon" title="Redux" />
-
+          <img src={nextIcon} alt="devIcon" title="Next.js" />
+          <img src={metaMaskIcon} alt="devIcon" title="MetaMask"/>
+          <img src={moralisIcon} alt="devIcon" title="Moralis" style={{width: "auto"}}/>
+          <img src={expressIcon} alt="devIcon" title="Express.js" />
+          <img src={mongoDBIcon} alt="devIcon" title="mongoDB" />
           <img src={herokuIcon} alt="devIcon" title="Heroku" />
-          <img src={netlifyIcon} alt="devIcon" title="netlify" />
         </div>
         <p>
         Lungo allows users to sign in with their MetaMask wallet 
         and display their NFT collections, view NFT details and 
         attributes, as well as links to marketplaces. Users are 
-        also able to create a list of wallets they@apos;d like to 
+        also able to create a list of wallets they'd like to 
         track in order to keep up with what other NFT investors 
         are doing. After adding a tracked wallet, users are able 
         to see the NFTs owned by that address and track changes 

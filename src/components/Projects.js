@@ -91,10 +91,10 @@ export default function Projects() {
             Lungo
           </h1>
           <h3>Web3</h3>
-          <img src={lungoImage} alt="Fish" />
+          <img src={lungoImage} alt="Lungo" />
           <button
             onClick={() => {
-              navigate("/project/6");
+              navigate("/project/1");
             }}
             style={{ backgroundColor: "rgb(132, 76, 247)" }}
             className="virtual-card__button"
@@ -128,10 +128,10 @@ export default function Projects() {
             Dealio Online Store
           </h1>
           <h3>E-Commerce</h3>
-          <img src={dealioImage} alt="Hater" />
+          <img src={dealioImage} alt="Dealio" />
           <button
             onClick={() => {
-              navigate("/project/5");
+              navigate("/project/2");
             }}
             style={{ backgroundColor: "rgba(255, 196, 0, 0.5)" }}
             className="virtual-card__button"
@@ -168,7 +168,7 @@ export default function Projects() {
           <img src={crosschainImage} alt="Hater" />
           <button
             onClick={() => {
-              navigate("/project/1");
+              navigate("/project/3");
             }}
             style={{ backgroundColor: "rgba(235, 66, 108, 0.25)" }}
             className="virtual-card__button"
@@ -206,7 +206,7 @@ export default function Projects() {
           <button
             style={{ backgroundColor: "rgba(142, 66, 235,0.25" }}
             onClick={() => {
-              navigate("/project/2");
+              navigate("/project/4");
             }}
             className="virtual-card__button"
             variant="outlined"
