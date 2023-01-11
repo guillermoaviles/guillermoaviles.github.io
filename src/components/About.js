@@ -4,19 +4,14 @@ import ProfilePic from "../media/profile-round.png";
 import { TrackRef } from "../util/viewTracker.js";
 import { useTransition, animated } from "react-spring";
 import nodeIcon from "../media/node.svg";
+import nextIcon from "../media/nextjs.svg";
 import mongoDBIcon from "../media/mongoDB.svg";
-import typeIcon from "../media/type.svg";
 import expressIcon from "../media/express.svg";
 import pythonIcon from "../media/python.svg";
-import flaskIcon from "../media/flask.svg";
 import reactIcon from "../media/react.svg";
-import reduxIcon from "../media/redux.svg";
 import djangoIcon from "../media/django.svg";
 import postgresIcon from "../media/postgres.svg";
-import jwtIcon from "../media/jwt.svg";
 import sassIcon from "../media/sass.svg";
-import rubyImage from "../media/ruby-plain.svg";
-import railsImage from "../media/rails-plain.svg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
@@ -53,8 +48,9 @@ export default function About() {
               <animated.div className="About__animated__div" style={style}>
                 <p className="About__text__content">
                   I am a Software Engineer based in Miami Fl, experienced in
-                  building full stack apps. I love learning and leveraging code
-                  to bring about positive experiences.
+                  building full stack apps. I firmly believe in the power of 
+                  collaboration, especially in the context of solving 
+                  challenging technical problems.
                 </p>
               </animated.div>
             ) : (
@@ -66,17 +62,12 @@ export default function About() {
               <animated.div className="About__animated__div" style={style}>
                 <p className="About__skills__header">My Stacks 📚</p>
                 <div className="About__image_array">
-                  <img src={rubyImage} alt="devIcon" title="Ruby" />
-                  <img src={pythonIcon} alt="devIcon" title="Python" />
-                  <img src={nodeIcon} alt="devIcon" title="Node.js" />
-                  <img src={railsImage} alt="devIcon" title="Rails" />
-                  <img src={djangoIcon} alt="devIcon" title="Django" />
                   <img src={reactIcon} alt="devIcon" title="React.js" />
-                  <img src={reduxIcon} alt="devIcon" title="Redux" />
-                  <img src={typeIcon} alt="devIcon" title="Typescript" />
-                  <img src={jwtIcon} alt="devIcon" title="Json Web Tokens" />
+                  <img src={nextIcon} alt="devIcon" title="Next.js" />
+                  <img src={nodeIcon} alt="devIcon" title="Node.js" />
+                  <img src={pythonIcon} alt="devIcon" title="Python" />
+                  <img src={djangoIcon} alt="devIcon" title="Django" />
                   <img src={sassIcon} alt="devIcon" title="Sass" />
-                  <img src={flaskIcon} alt="devIcon" title="Flask" />
                   <img src={expressIcon} alt="devIcon" title="Express" />
                   <img src={mongoDBIcon} alt="devIcon" title="MongoDB" />
                   <img src={postgresIcon} alt="devIcon" title="PostgreSQL" />
@@ -84,20 +75,20 @@ export default function About() {
                 <p className="About__contact-title">Contact 📬</p>
                 <div className="About__contact_array">
                   <a
-                    href="https://www.linkedin.com/in/mustafabinalhag/"
+                    href="https://www.linkedin.com/in/guillermo-aviles/"
                     rel="noreferrer"
                     target="_blank"
                   >
                     <LinkedInIcon className="contact_item" fontSize="inherit" />
                   </a>
                   <a
-                    href="https://github.com/mustafabin"
+                    href="https://github.com/guillermoaviles"
                     rel="noreferrer"
                     target="_blank"
                   >
                     <GitHubIcon className="contact_item" fontSize="inherit" />
                   </a>
-                  <a href="mailto:mustafa@binalhag.dev">
+                  <a href="mailto:gjaviles7@gmail.com">
                     <EmailIcon className="contact_item" fontSize="inherit" />
                   </a>
                 </div>

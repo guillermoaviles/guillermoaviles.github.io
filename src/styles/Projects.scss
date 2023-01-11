@@ -1,5 +1,5 @@
 .Project {
-  width: 100vw;
+  max-width: 100vw;
   height: fit-content;
   background-color: var(--main-color);
   color: var(--text-color);
@@ -19,6 +19,7 @@
     );
   }
   &__virtual__container {
+    max-width: 60%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

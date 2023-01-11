@@ -32,13 +32,13 @@
     max-width: 350px;
     max-height: 350px;
     min-height: 100px;
-    border-radius: 10px;
+    border-radius: 180px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all ease 0.25s;
-    background-color: rgba(35, 4, 4, 0.459);
+    background-color: rgba(35, 4, 4, 0.477);
     filter: drop-shadow(0px 0px 1rem var(--fade-sub-action-color));
 
     & img {
@@ -52,7 +52,7 @@
     background: linear-gradient(
       180deg,
       transparent 75%,
-      rgba(89, 17, 255, 0.3) 75%,
+      hsla(258, 100%, 53%, 0.3) 75%,
       rgba(89, 50, 200, 0.4) 90%,
       rgba(89, 17, 255, 0.3) 100%,
       transparent 100%
@@ -65,13 +65,13 @@
     align-items: center;
     justify-content: center;
     & .contact_item {
-      color: rgb(228, 185, 106);
+      color: rgb(10, 186, 181);
       margin: 5vw;
       transition: all ease 0.3s;
 
       &:hover {
         font-size: smaller;
-        color: rgba(166, 33, 223, 0.573);
+        color: rgba(8, 142, 139, 0.573);
       }
     }
   }
