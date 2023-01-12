@@ -6,8 +6,8 @@ import Landing from "./components/Landing";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import Resume from "./screens/Resume";
-import SingleProject from "./screens/SingleProject";
+import Resume from "./components/Resume";
+import SingleProject from "./components/SingleProject";
 
 
 function App() {

@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
-import laptopSrc from "../media/hater.png";
-import phoneSrc from "../media/moblieHater.png";
-import reactIcon from "../media/react.svg";
-import reduxIcon from "../media/redux.svg";
-import djangoIcon from "../media/django.svg";
-import postgresIcon from "../media/postgres.svg";
-import herokuIcon from "../media/heroku.svg";
-import pythonIcon from "../media/python.svg";
-import netlifyIcon from "../media/netlify.svg";
-export default function Hater() {
+import hanoiImage from "../media/hanoi-laptop.png";
+import javascriptIcon from "../media/javascript.svg";
+import htmlIcon from "../media/html.svg";
+import cssIcon from "../media/css.svg";
+
+
+export default function TowerOfHanoi() {
   useEffect(() => {
     document.body.style.setProperty(
       "--projecthover-color",
@@ -19,8 +16,7 @@ export default function Hater() {
     <div className="SingleProject">
       <div className="SingleProject__top__row">
         <div className="SingleProject__image__container">
-          <img className="laptop" src={laptopSrc} alt="laptop" />
-          <img className="moblie" src={phoneSrc} alt="phone" />
+          <img className="laptop" src={hanoiImage} alt="laptop" />
         </div>
         <div
           className="SingleProject__title_wrapper"
@@ -53,15 +49,9 @@ export default function Hater() {
       <div className="SingleProject__bottom_container">
         <h1>Tech Used 🖥</h1>
         <div className="SingleProject__image__array__container">
-          <img src={postgresIcon} alt="devIcon" title="PostgreSQL" />
-
-          <img src={djangoIcon} alt="devIcon" title="Django" />
-          <img src={pythonIcon} alt="devIcon" title="Python" />
-          <img src={reactIcon} alt="devIcon" title="React.js" />
-          <img src={reduxIcon} alt="devIcon" title="Redux" />
-
-          <img src={herokuIcon} alt="devIcon" title="Heroku" />
-          <img src={netlifyIcon} alt="devIcon" title="netlify" />
+          <img src={htmlIcon} alt="devIcon" title="HTML" />
+          <img src={cssIcon} alt="devIcon" title="CSS" />
+          <img src={javascriptIcon} alt="devIcon" title="Javascript" />
         </div>
         <p>
         The objective of the Tower of Hanoi game is to move all 

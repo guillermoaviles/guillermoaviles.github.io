@@ -1,10 +1,10 @@
 import "../styles/SingleProject.scss";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Lungo from "../components/Lungo";
-import OnlineStore from "../components/OnlineStore";
-import CrosschainStats from "../components/CrosschainStats";
-import TowerOfHanoi from "../components/TowerOfHanoi";
+import Lungo from "./Lungo";
+import OnlineStore from "./OnlineStore";
+import CrosschainStats from "./CrosschainStats";
+import TowerOfHanoi from "./TowerOfHanoi";
 
 
 export default function SingleProject() {

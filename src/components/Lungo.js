@@ -8,7 +8,7 @@ import expressIcon from "../media/express.svg";
 import mongoDBIcon from "../media/mongoDB.svg";
 
 
-export default function Hater() {
+export default function Lungo() {
   useEffect(() => {
     document.body.style.setProperty(
       "--projecthover-color",

@@ -4,8 +4,6 @@ import lungoImage from "../media/lungo-laptop.png";
 import dealioImage from "../media/dealio-laptop.png";
 import crosschainImage from "../media/crosschain-laptop.png";
 import hanoiImage from "../media/hanoi-laptop.png";
-import NineDImage from "../media/9d.png";
-import countryImage from "../media/country.png";
 import "../styles/Projects.scss";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import { useNavigate } from "react-router-dom";
@@ -25,30 +23,11 @@ export default function Projects() {
     xys: [0, 0, 1],
     config: { mass: 15, tension: 200, friction: 50 },
   };
-  const [styleOne, setstyleOne] = useSpring(() => ({
+  const [styling, setStyling] = useSpring(() => ({
     xys: AnimationDefaults.xys,
     config: AnimationDefaults.config,
   }));
-  const [styleZero, setstyleZero] = useSpring(() => ({
-    xys: AnimationDefaults.xys,
-    config: AnimationDefaults.config,
-  }));
-  const [styleTwo, setstyleTwo] = useSpring(() => ({
-    xys: AnimationDefaults.xys,
-    config: AnimationDefaults.config,
-  }));
-  const [styleThree, setstyleThree] = useSpring(() => ({
-    xys: AnimationDefaults.xys,
-    config: AnimationDefaults.config,
-  }));
-  const [styleFour, setstyleFour] = useSpring(() => ({
-    xys: AnimationDefaults.xys,
-    config: AnimationDefaults.config,
-  }));
-  const [styleFive, setstyleFive] = useSpring(() => ({
-    xys: AnimationDefaults.xys,
-    config: AnimationDefaults.config,
-  }));
+  
   let handleExaggeration = () => {
     if (xStiffness !== 1) {
       setxStiffness(1);
@@ -73,12 +52,12 @@ export default function Projects() {
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setstyleFive.start({ xys: calc(x, y) })
+            setStyling.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setstyleFive.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styleFive.xys.to(trans),
-            "border-color": "rgb(132, 76, 247)",
+            transform: styling.xys.to(trans),
+            "borderColor": "rgb(132, 76, 247)",
           }}
         >
           <h1
@@ -110,12 +89,12 @@ export default function Projects() {
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setstyleZero.start({ xys: calc(x, y) })
+            setStyling.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setstyleZero.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styleZero.xys.to(trans),
-            "border-color": "rgba(255, 196, 0, 0.5)",
+            transform: styling.xys.to(trans),
+            "borderColor": "rgba(255, 196, 0, 0.5)",
           }}
         >
           <h1
@@ -147,12 +126,12 @@ export default function Projects() {
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setstyleOne.start({ xys: calc(x, y) })
+            setStyling.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setstyleOne.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styleOne.xys.to(trans),
-            "border-color": "rgba(235, 66, 108, 0.5)",
+            transform: styling.xys.to(trans),
+            "borderColor": "rgba(235, 66, 108, 0.5)",
           }}
         >
           <h1
@@ -184,12 +163,12 @@ export default function Projects() {
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setstyleTwo.start({ xys: calc(x, y) })
+            setStyling.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setstyleTwo.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styleTwo.xys.to(trans),
-            "border-color": "rgba(142, 66, 235,0.5",
+            transform: styling.xys.to(trans),
+            "borderColor": "rgba(142, 66, 235,0.5",
           }}
         >
           <h1

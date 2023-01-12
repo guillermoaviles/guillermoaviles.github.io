@@ -5,7 +5,10 @@ import nodeIcon from "../media/node.svg";
 import herokuIcon from "../media/heroku.svg";
 import expressIcon from "../media/express.svg";
 import mongoDBIcon from "../media/mongoDB.svg";
-export default function Hater() {
+
+
+
+export default function OnlineStore() {
   useEffect(() => {
     document.body.style.setProperty(
       "--projecthover-color",
@@ -51,7 +54,6 @@ export default function Hater() {
         <div className="SingleProject__image__array__container">
           <img src={reactIcon} alt="devIcon" title="React.js" />
           <img src={nodeIcon} alt="devIcon" title="Node.js" />
-          
           <img src={expressIcon} alt="devIcon" title="Express.js" />
           <img src={mongoDBIcon} alt="devIcon" title="mongoDB" />
           <img src={herokuIcon} alt="devIcon" title="Heroku" />
