@@ -60,7 +60,7 @@ export default function About() {
           {secondTransistion((style, item) =>
             item ? (
               <animated.div className="About__animated__div" style={style}>
-                <p className="About__skills__header">My Stacks 📚</p>
+                <p className="About__skills__header">Stacks</p>
                 <div className="About__image_array">
                   <img src={reactIcon} alt="devIcon" title="React.js" />
                   <img src={nextIcon} alt="devIcon" title="Next.js" />
@@ -72,7 +72,7 @@ export default function About() {
                   <img src={mongoDBIcon} alt="devIcon" title="MongoDB" />
                   <img src={postgresIcon} alt="devIcon" title="PostgreSQL" />
                 </div>
-                <p className="About__contact-title">Contact 📬</p>
+                <p className="About__contact-title">Contact</p>
                 <div className="About__contact_array">
                   <a
                     href="https://www.linkedin.com/in/guillermo-aviles/"

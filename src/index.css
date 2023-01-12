@@ -7,9 +7,9 @@
   --dark-main-color: #212831;
   --splash-color: #7a2605;
   --footer-color: #212831;
-  --action-color: #0abab5;
+  --action-color: #00feff;
   --fade-action-color: rgba(255, 137, 0, 0.2);
-  --sub-action-color: #00feff;
+  --sub-action-color: #0abab5;
   --fade-sub-action-color: rgba(0, 254, 255, 0.2);
   --text-color: white;
   --projecthover-color: #2128314a;
@@ -36,3 +36,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* #0abab5 */

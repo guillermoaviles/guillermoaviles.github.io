@@ -10,13 +10,6 @@
   }
   &__skills__header {
     align-self: center;
-    background: linear-gradient(
-      180deg,
-      transparent 70%,
-      rgba(100, 184, 160, 0.56) 70%,
-      rgba(100, 184, 160, 0.56) 87%,
-      transparent 87%
-    );
     font-size: 2rem;
   }
   &__animated__div {
@@ -49,14 +42,6 @@
   &__contact-title {
     font-size: 2rem;
     font-weight: lighter;
-    background: linear-gradient(
-      180deg,
-      transparent 75%,
-      hsla(258, 100%, 53%, 0.3) 75%,
-      rgba(89, 50, 200, 0.4) 90%,
-      rgba(89, 17, 255, 0.3) 100%,
-      transparent 100%
-    );
   }
   &__contact_array {
     display: flex;
@@ -65,13 +50,14 @@
     align-items: center;
     justify-content: center;
     & .contact_item {
-      color: rgb(10, 186, 181);
+      color: #00feff;
       margin: 5vw;
       transition: all ease 0.3s;
+      font-size: 5rem;
 
       &:hover {
-        font-size: smaller;
-        color: rgba(8, 142, 139, 0.573);
+        font-size: 4rem;
+        color: #0abab5;
       }
     }
   }
@@ -94,11 +80,6 @@
   }
   & h1 {
     width: fit-content;
-    background: linear-gradient(
-      180deg,
-      transparent 70%,
-      var(--action-color) 70%
-    );
   }
   & h2 {
     width: fit-content;

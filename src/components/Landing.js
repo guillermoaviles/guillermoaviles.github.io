@@ -23,9 +23,9 @@ function Landing () {
                             .deleteAll()
                             .pauseFor(200)
                             .typeString(
-                                "I'm <span style='color: var(--action-color);  font-weight: 400;'> Guilermo Aviles<span> <br></br>"
+                                "I'm <span style='color: var(--action-color);  font-weight: 400;'> Guillermo Aviles<span> <br></br>"
                             )
-                            .typeString("<strong></strong>A Mechanical Engineer")
+                            .typeString("<strong></strong>Mechanical Engineer")
                             .changeDeleteSpeed(30)
                             .pauseFor(250)
                             .deleteChars(19)
@@ -36,7 +36,7 @@ function Landing () {
                             .deleteChars(10)
                             .changeDelay("natural")
                             .typeString(
-                                "<span style='color: var(--sub-action-color);  font-weight: 400;'>Software Engineer 👨🏽‍💻</span>"
+                                "<span style='color: var(--action-color);  font-weight: 400;'>Software Engineer 👨🏽‍💻</span>"
                             )
                             .changeDeleteSpeed("natural")
                             .pauseFor(2000)

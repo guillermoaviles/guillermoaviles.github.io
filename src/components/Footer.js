@@ -8,7 +8,7 @@ import EmailIcon from "@mui/icons-material/Email";
 function Footer() {
   return (
     <div className="Footer" id="Footer">
-      <p>2023 | Created by yours truly 🚀</p>
+      <p>2023 | Created by Guillermo Aviles 🚀</p>
       <div className="Footer__contact_container">
         <a
           href="https://www.linkedin.com/in/guillermo-aviles/"

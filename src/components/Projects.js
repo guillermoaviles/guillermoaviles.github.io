@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSpring, animated } from "react-spring";
 import lungoImage from "../media/lungo-laptop.png";
 import dealioImage from "../media/dealio-laptop.png";
 import crosschainImage from "../media/crosschain-laptop.png";
 import hanoiImage from "../media/hanoi-laptop.png";
 import "../styles/Projects.scss";
-import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import { useNavigate } from "react-router-dom";
+
+
 export default function Projects() {
   let navigate = useNavigate();
-  const [xStiffness, setxStiffness] = useState(15);
-  const [buttonText, setButtonText] = useState("Exaggerate Animation 🥵");
   //helper functions for the animation
   const calc = (x, y) => [
     -(y - window.innerHeight / 2) / 35, // the denominator is repsonible for the 'stiffness'
-    (x - window.innerWidth / 2) / xStiffness, //in this case since the button is at the button i dont want the animation to as annoying
+    (x - window.innerWidth / 2) / 35, //in this case since the button is at the button i dont want the animation to as annoying
     1.07,
   ];
   const trans = (x, y, s) =>
@@ -23,41 +22,37 @@ export default function Projects() {
     xys: [0, 0, 1],
     config: { mass: 15, tension: 200, friction: 50 },
   };
-  const [styling, setStyling] = useSpring(() => ({
+  const [styleOne, setStyleOne] = useSpring(() => ({
+    xys: AnimationDefaults.xys,
+    config: AnimationDefaults.config,
+  }));
+  const [styleTwo, setstyleTwo] = useSpring(() => ({
+    xys: AnimationDefaults.xys,
+    config: AnimationDefaults.config,
+  }));
+  const [styleThree, setstyleThree] = useSpring(() => ({
+    xys: AnimationDefaults.xys,
+    config: AnimationDefaults.config,
+  }));
+  const [styleFour, setstyleFour] = useSpring(() => ({
     xys: AnimationDefaults.xys,
     config: AnimationDefaults.config,
   }));
   
-  let handleExaggeration = () => {
-    if (xStiffness !== 1) {
-      setxStiffness(1);
-      setButtonText("Return to Normal 😵‍💫");
-    } else {
-      setxStiffness(15);
-
-      setButtonText("Exaggerate Animation 🥵");
-    }
-  };
+  
   return ( 
     <div className="Project" id="Projects">
-      <h1 className="Project__title">My Projects 🎨</h1>
-      <button
-        style={{ backgroundColor: "rgba(68, 60, 254, 0.1)" }}
-        className="virtual-card__button exaggerate-button"
-        onClick={handleExaggeration}
-      >
-        {buttonText}
-      </button>
+      <h1 className="Project__title">Projects</h1>
       <div className="Project__virtual__container">
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setStyling.start({ xys: calc(x, y) })
+            setStyleOne.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setStyleOne.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styling.xys.to(trans),
-            "borderColor": "rgb(132, 76, 247)",
+            transform: styleOne.xys.to(trans),
+            "borderColor": "#0abab5",
           }}
         >
           <h1
@@ -80,20 +75,16 @@ export default function Projects() {
             variant="outlined"
           >
             Learn More
-            <ReadMoreIcon
-              className="learn-more-icon"
-              fontSize="inherit"
-            ></ReadMoreIcon>
           </button>
         </animated.div>
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setStyling.start({ xys: calc(x, y) })
+            setstyleTwo.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setstyleTwo.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styling.xys.to(trans),
+            transform: styleTwo.xys.to(trans),
             "borderColor": "rgba(255, 196, 0, 0.5)",
           }}
         >
@@ -117,20 +108,16 @@ export default function Projects() {
             variant="outlined"
           >
             Learn More
-            <ReadMoreIcon
-              className="learn-more-icon"
-              fontSize="inherit"
-            ></ReadMoreIcon>
           </button>
         </animated.div>
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setStyling.start({ xys: calc(x, y) })
+            setstyleThree.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setstyleThree.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styling.xys.to(trans),
+            transform: styleThree.xys.to(trans),
             "borderColor": "rgba(235, 66, 108, 0.5)",
           }}
         >
@@ -154,20 +141,16 @@ export default function Projects() {
             variant="outlined"
           >
             Learn More
-            <ReadMoreIcon
-              className="learn-more-icon"
-              fontSize="inherit"
-            ></ReadMoreIcon>
           </button>
         </animated.div>
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
-            setStyling.start({ xys: calc(x, y) })
+            setstyleFour.start({ xys: calc(x, y) })
           }
-          onMouseLeave={() => setStyling.start({ xys: [0, 0, 1] })}
+          onMouseLeave={() => setstyleFour.start({ xys: [0, 0, 1] })}
           style={{
-            transform: styling.xys.to(trans),
+            transform: styleFour.xys.to(trans),
             "borderColor": "rgba(142, 66, 235,0.5",
           }}
         >
@@ -191,10 +174,6 @@ export default function Projects() {
             variant="outlined"
           >
             Learn More
-            <ReadMoreIcon
-              className="learn-more-icon"
-              fontSize="inherit"
-            ></ReadMoreIcon>
           </button>
         </animated.div>
       </div>
