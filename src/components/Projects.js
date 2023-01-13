@@ -57,10 +57,6 @@ export default function Projects() {
         >
           <h1
             className="virtual-card__title"
-            style={{
-              background:
-                "linear-gradient(180deg, transparent 70%,rgb(132, 76, 247,0.7) 70%,rgb(132, 76, 247,0.7) 87%,transparent 87%)",
-            }}
           >
             Lungo
           </h1>
@@ -90,10 +86,6 @@ export default function Projects() {
         >
           <h1
             className="virtual-card__title"
-            style={{
-              background:
-                "linear-gradient(180deg, transparent 70%,rgba(255, 196, 0, 0.5) 70%,rgba(255, 196, 0, 0.5) 87%,transparent 87%)",
-            }}
           >
             Dealio Online Store
           </h1>
@@ -123,10 +115,6 @@ export default function Projects() {
         >
           <h1
             className="virtual-card__title"
-            style={{
-              background:
-                "linear-gradient(180deg, transparent 70%,rgba(235, 66, 108, 0.5) 70%,rgba(235, 66, 108, 0.5) 87%,transparent 87%)",
-            }}
           >
             Crosschain Stats
           </h1>
@@ -156,10 +144,6 @@ export default function Projects() {
         >
           <h1
             className="virtual-card__title"
-            style={{
-              background:
-                "linear-gradient(180deg, transparent 70%,rgba(142, 66, 235,0.5) 70%,rgba(142, 66, 235,0.5) 87%,transparent 87%)",
-            }}
           >
             Tower Of Hanoi
           </h1>
