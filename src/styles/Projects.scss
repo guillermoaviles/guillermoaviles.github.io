@@ -1,0 +1,76 @@
+.Project {
+  max-width: 100vw;
+  height: fit-content;
+  background-color: var(--main-color);
+  color: var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  &__title {
+    width: fit-content;
+  }
+  &__virtual__container {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+  }
+}
+.virtual-card {
+  width: 25rem;
+  background-color: #404453;
+  height: fit-content;
+  border-radius: 40px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 30px 2px rgba(0, 0, 0, 0.1);
+  will-change: transform;
+  // border: 1.6px solid;
+  transition: border-radius ease 0.5s, border-color ease-out 1.3s, box-shadow 2s;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &:hover {
+    filter: drop-shadow(0 0 3em rgba(128, 0, 128, 0.166));
+    border-color: var(--sub-action-color);
+    border-radius: 40px;
+  }
+  & img {
+    max-width: 20rem;
+    max-height: 20rem;
+    margin-bottom: 2rem;
+  }
+  &__button {
+    color: var(--text-color);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 0.7rem;
+    border: 1px solid rgba(20, 20, 20, 0.517);
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--fade-sub-action-color) !important;
+      font-weight: bolder;
+    }
+    & .learn-more-icon {
+      font-size: 2rem;
+    }
+  }
+}
+.exaggerate-button {
+  margin: 2rem;
+}
+
+@media (max-width: 450px) {
+  .virtual-card__title {
+    font-size: 1.3rem;
+  }
+}
