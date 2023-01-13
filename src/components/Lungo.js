@@ -36,7 +36,7 @@ export default function Lungo() {
             target="_blank"
             href="https://lungo.vercel.app/"
           >
-            <button>Deployed Site 🚀</button>
+            <button>Deployed Site</button>
           </a>
           <a
             rel="noreferrer"
@@ -44,13 +44,13 @@ export default function Lungo() {
             href="https://github.com/guillermoaviles/lungo-frontend"
           >
             <button>
-              Repository <span>🗄</span>
+              Repository
             </button>
           </a>
         </div>
       </div>
       <div className="SingleProject__bottom_container">
-        <h1>Tech Used 🖥</h1>
+        <h1>Tech Used</h1>
         <div className="SingleProject__image__array__container">
           <img src={nextIcon} alt="devIcon" title="Next.js" />
           <img src={metaMaskIcon} alt="devIcon" title="MetaMask"/>

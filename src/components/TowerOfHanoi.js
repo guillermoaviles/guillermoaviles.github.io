@@ -33,7 +33,7 @@ export default function TowerOfHanoi() {
             target="_blank"
             href="https://tower-of-hanoi-seven.vercel.app/"
           >
-            <button>Deployed Site 🚀</button>
+            <button>Deployed Site</button>
           </a>
           <a
             rel="noreferrer"
@@ -41,13 +41,13 @@ export default function TowerOfHanoi() {
             href="https://github.com/guillermoaviles/Tower-of-Hanoi"
           >
             <button>
-              Repository <span>🗄</span>
+              Repository
             </button>
           </a>
         </div>
       </div>
       <div className="SingleProject__bottom_container">
-        <h1>Tech Used 🖥</h1>
+        <h1>Tech Used</h1>
         <div className="SingleProject__image__array__container">
           <img src={htmlIcon} alt="devIcon" title="HTML" />
           <img src={cssIcon} alt="devIcon" title="CSS" />
