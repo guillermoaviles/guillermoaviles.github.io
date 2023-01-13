@@ -24,7 +24,7 @@ function Resume () {
         </Document>
       </div>
       <a className="Resume__download" download href={resumeSrc}>
-        <button>Download ⬇️</button>
+        <button>Download</button>
       </a>
     </div>
   );
