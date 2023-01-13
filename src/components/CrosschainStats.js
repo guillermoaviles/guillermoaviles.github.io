@@ -33,7 +33,7 @@ export default function CrossChainStats() {
             target="_blank"
             href="https://crosschain-bridging-stats.vercel.app/"
           >
-            <button>Deployed Site 🚀</button>
+            <button>Deployed Site</button>
           </a>
           <a
             rel="noreferrer"
@@ -41,13 +41,13 @@ export default function CrossChainStats() {
             href="https://github.com/guillermoaviles/crosschain-bridging-stats"
           >
             <button>
-              Repository <span>🗄</span>
+              Repository
             </button>
           </a>
         </div>
       </div>
       <div className="SingleProject__bottom_container">
-        <h1>Tech Used 🖥</h1>
+        <h1>Tech Used</h1>
         <div className="SingleProject__image__array__container">
           <img src={reactIcon} alt="devIcon" title="React.js" />
           <img src={axelarIcon} alt="devIcon" title="Axelarscan" />

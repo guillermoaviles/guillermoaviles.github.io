@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Resume.scss";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
-import resumeSrc from "../media/resume.pdf";
+import resumeSrc from "../media/Guillermo Aviles - Resume.pdf";
 
 
 function Resume () {

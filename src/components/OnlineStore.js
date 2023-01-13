@@ -36,7 +36,7 @@ export default function OnlineStore() {
             target="_blank"
             href="https://online-store-pt8ruqtva-guillermoaviles.vercel.app/"
           >
-            <button>Deployed Site 🚀</button>
+            <button>Deployed Site</button>
           </a>
           <a
             rel="noreferrer"
@@ -44,13 +44,13 @@ export default function OnlineStore() {
             href="https://github.com/guillermoaviles/online-store-fe"
           >
             <button>
-              Repository <span>🗄</span>
+              Repository
             </button>
           </a>
         </div>
       </div>
       <div className="SingleProject__bottom_container">
-        <h1>Tech Used 🖥</h1>
+        <h1>Tech Used</h1>
         <div className="SingleProject__image__array__container">
           <img src={reactIcon} alt="devIcon" title="React.js" />
           <img src={nodeIcon} alt="devIcon" title="Node.js" />
