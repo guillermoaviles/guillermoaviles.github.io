@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-pdf": "^6.2.0",
     "copy-webpack-plugin": "^11.0.0",
     "sass": "^1.57.1"
   }
