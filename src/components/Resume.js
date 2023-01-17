@@ -17,6 +17,7 @@ function Resume () {
       style.transform = "";
     });
   }
+  
   return (
     <div className="Resume" id="Resume">
       <div className="Resume__pdf-container">
