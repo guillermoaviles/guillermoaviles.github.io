@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import resumeSrc from "../media/resume.pdf";
 import "../styles/Resume.scss";
 
