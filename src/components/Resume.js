@@ -1,6 +1,6 @@
 import React from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import resumeSrc from "../media/resume.pdf";
+import resumeSrc from "../media/Guillermo Aviles - Resume.pdf";
 import "../styles/Resume.scss";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 

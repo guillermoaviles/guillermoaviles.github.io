@@ -1,6 +1,7 @@
 import "../styles/SingleProject.scss";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Cacao from "./Cacao";
 import Lungo from "./Lungo";
 import OnlineStore from "./OnlineStore";
 import CrosschainStats from "./CrosschainStats";
@@ -16,12 +17,15 @@ export default function SingleProject() {
         setContent(<Lungo />);
         break;
       case "2":
-        setContent(<OnlineStore />);
+        setContent(<Lungo />);
         break;
       case "3":
-        setContent(<CrosschainStats />);
+        setContent(<OnlineStore />);
         break;
       case "4":
+        setContent(<CrosschainStats />);
+        break;
+      case "5":
         setContent(<TowerOfHanoi />);
         break;
       default:

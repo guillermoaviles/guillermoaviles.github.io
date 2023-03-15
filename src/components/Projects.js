@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import cacaoImage from "../media/cacao-laptop.png";
 import lungoImage from "../media/lungo-laptop.png";
 import dealioImage from "../media/dealio-laptop.png";
 import crosschainImage from "../media/crosschain-laptop.png";
@@ -44,6 +45,35 @@ export default function Projects() {
     <div className="Project" id="Projects">
       <h1 className="Project__title">Projects</h1>
       <div className="Project__virtual__container">
+      <animated.div
+          className="virtual-card"
+          onMouseMove={({ clientX: x, clientY: y }) =>
+            setStyleOne.start({ xys: calc(x, y) })
+          }
+          onMouseLeave={() => setStyleOne.start({ xys: [0, 0, 1] })}
+          style={{
+            transform: styleOne.xys.to(trans),
+            "borderColor": "#0abab5",
+          }}
+        >
+          <h1
+            className="virtual-card__title"
+          >
+            Cacao
+          </h1>
+          <h3>Web3</h3>
+          <img src={cacaoImage} alt="Lungo" />
+          <button
+            onClick={() => {
+              navigate("/project/1");
+            }}
+            style={{ backgroundColor: "rgb(120, 176, 247)" }}
+            className="virtual-card__button"
+            variant="outlined"
+          >
+            Learn More
+          </button>
+        </animated.div>
         <animated.div
           className="virtual-card"
           onMouseMove={({ clientX: x, clientY: y }) =>
