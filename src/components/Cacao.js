@@ -64,7 +64,7 @@ export default function Lungo() {
         the renter. For renters, this means having the ability to 
         benefit from accessing NFT-gated events and experiences such 
         as events, groups, gaming and many more without the need to 
-        collateralize the entire worth of the asset.
+        collateralize the full value of the asset.
         </p>
       </div>
     </div>
