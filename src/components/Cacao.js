@@ -3,9 +3,9 @@ import cacaoImage from "../media/cacao-laptop.png";
 import metaMaskIcon from "../media/metamask.png";
 import nextIcon from "../media/nextjs.svg";
 import herokuIcon from "../media/heroku.svg";
-import moralisIcon from "../media/moralis.png";
-import expressIcon from "../media/express.svg";
-import mongoDBIcon from "../media/mongoDB.svg";
+import reduxIcon from "../media/redux.svg";
+import typeIcon from "../media/type.svg";
+import tailwindIcon from "../media/Tailwind_CSS_Logo.svg.png";
 
 
 export default function Lungo() {
@@ -34,14 +34,14 @@ export default function Lungo() {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://lungo.vercel.app/"
+            href="https://app-mhw23.vercel.app/"
           >
             <button>Deployed Site</button>
           </a>
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://github.com/guillermoaviles/lungo-frontend"
+            href="https://github.com/MHW23/app"
           >
             <button>
               Repository
@@ -54,20 +54,17 @@ export default function Lungo() {
         <div className="SingleProject__image__array__container">
           <img src={nextIcon} alt="devIcon" title="Next.js" />
           <img src={metaMaskIcon} alt="devIcon" title="MetaMask"/>
-          <img src={moralisIcon} alt="devIcon" title="Moralis" style={{width: "auto"}}/>
-          <img src={expressIcon} alt="devIcon" title="Express.js" />
-          <img src={mongoDBIcon} alt="devIcon" title="mongoDB" />
-          <img src={herokuIcon} alt="devIcon" title="Heroku" />
+          <img src={reduxIcon} alt="devIcon" title="Redux" style={{width: "auto"}}/>
+          <img src={typeIcon} alt="devIcon" title="Express.js" />
+          <img src={tailwindIcon} alt="devIcon" title="mongoDB" />
         </div>
         <p>
-        Lungo allows users to sign in with their MetaMask wallet 
-        and display their NFT collections, view NFT details and 
-        attributes, as well as links to marketplaces. Users are 
-        also able to create a list of wallets they'd like to 
-        track in order to keep up with what other NFT investors 
-        are doing. After adding a tracked wallet, users are able 
-        to see the NFTs owned by that address and track changes 
-        in their portfolio.
+        Cacao is an NFT utility rental marketplace. It allows owners 
+        to earn yield on their valued NFTs without the NFT going to 
+        the renter. For renters, this means having the ability to 
+        benefit from accessing NFT-gated events and experiences such 
+        as events, groups, gaming and many more without the need to 
+        collateralize the entire worth of the asset.
         </p>
       </div>
     </div>

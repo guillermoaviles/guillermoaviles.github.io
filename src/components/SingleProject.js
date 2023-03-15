@@ -14,7 +14,7 @@ export default function SingleProject() {
   useEffect(() => {
     switch (num) {
       case "1":
-        setContent(<Lungo />);
+        setContent(<Cacao />);
         break;
       case "2":
         setContent(<Lungo />);
