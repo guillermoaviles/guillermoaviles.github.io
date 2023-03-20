@@ -62,7 +62,7 @@ export default function Projects() {
             Cacao
           </h1>
           <h3>Web3</h3>
-          <img src={cacaoImage} alt="Lungo" />
+          <img src={cacaoImage} alt="Cacao" />
           <button
             onClick={() => {
               navigate("/project/1");
@@ -94,7 +94,7 @@ export default function Projects() {
           <img src={lungoImage} alt="Lungo" />
           <button
             onClick={() => {
-              navigate("/project/1");
+              navigate("/project/2");
             }}
             style={{ backgroundColor: "rgb(132, 76, 247)" }}
             className="virtual-card__button"
@@ -123,7 +123,7 @@ export default function Projects() {
           <img src={dealioImage} alt="Dealio" />
           <button
             onClick={() => {
-              navigate("/project/2");
+              navigate("/project/3");
             }}
             style={{ backgroundColor: "rgba(255, 196, 0, 0.5)" }}
             className="virtual-card__button"
@@ -149,10 +149,10 @@ export default function Projects() {
             Crosschain Stats
           </h1>
           <h3>Data</h3>
-          <img src={crosschainImage} alt="Hater" />
+          <img src={crosschainImage} alt="Crosschain" />
           <button
             onClick={() => {
-              navigate("/project/3");
+              navigate("/project/4");
             }}
             style={{ backgroundColor: "rgba(235, 66, 108, 0.25)" }}
             className="virtual-card__button"
@@ -178,11 +178,11 @@ export default function Projects() {
             Tower Of Hanoi
           </h1>
           <h3>Games</h3>
-          <img src={hanoiImage} alt="Cosmos" />
+          <img src={hanoiImage} alt="Hanoi" />
           <button
             style={{ backgroundColor: "rgba(142, 66, 235,0.25" }}
             onClick={() => {
-              navigate("/project/4");
+              navigate("/project/5");
             }}
             className="virtual-card__button"
             variant="outlined"
